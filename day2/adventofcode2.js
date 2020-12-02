@@ -1,9 +1,8 @@
 const fs = require("fs");
-let arr = [];
 
-fs.readFile("adventofcode2input.txt", (err, data) => {
+fs.readFile("input.txt", (err, data) => {
   if (err) throw err;
-  arr = data.toString().split("\n");
+  let arr = data.toString().split("\n");
   let count = 0;
   arr.map((password) => {
     let letter = password.split(":")[0].split(" ")[1];
@@ -19,9 +18,9 @@ fs.readFile("adventofcode2input.txt", (err, data) => {
   });
 });
 
-fs.readFile("adventofcode2input.txt", (err, data) => {
+fs.readFile("input.txt", (err, data) => {
   if (err) throw err;
-  arr = data.toString().split("\n");
+  let arr = data.toString().split("\n");
   let count = 0;
   arr.map((password) => {
     let letter = password.split(":")[0].split(" ")[1];
